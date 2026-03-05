@@ -1,0 +1,30 @@
+# Python
+**/.venv/
+**/__pycache__/
+**/*.pyc
+**/.pytest_cache/
+
+# Node / Angular
+**/node_modules/
+**/.angular/
+**/dist/
+
+# Outputs / data / videos
+**/outputs/
+**/*.mp4
+**/*.avi
+**/*.mov
+**/*.mkv
+
+# Large model files
+**/*.pt
+**/*.pth
+**/*.ckpt
+**/*.onnx
+**/*.engine
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

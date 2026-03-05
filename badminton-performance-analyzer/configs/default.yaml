@@ -1,0 +1,20 @@
+video:
+  resize_width: null
+  resize_height: null
+rally:
+  min_visible_frames: 30
+  gap_threshold_frames: 45
+  min_rally_frames: 60
+hit:
+  min_speed_px_per_frame: 5.0
+  accel_threshold: 8.0
+viz:
+  traj_tail: 20
+eval:
+  dist_threshold_px: 12.0
+landing_heatmap:
+  sigma: 5
+  percentile: 99
+  log_scale: true
+  point_radius: 6
+  tail_points: 5
