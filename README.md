@@ -1,6 +1,6 @@
 # Badminton Performance Analyzer
 
-A final-year computing project by Mingkai Huang: a prototype that connects badminton shuttlecock tracking, trajectory analysis and a browser-based results dashboard.
+A prototype that connects badminton shuttlecock tracking, trajectory analysis and a browser-based results dashboard.
 
 The full workflow accepts a video, uses the third-party TrackNetV3 model to generate trajectory data, estimates rallies and hit events, and saves each analysis as a separate run. The interface uses Angular and FastAPI; an additional Streamlit dashboard supports visual exploration.
 
