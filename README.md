@@ -8,6 +8,12 @@ The full workflow accepts a video, uses the third-party TrackNetV3 model to gene
 
 *Figure 5-1 from the final-year thesis: the Angular result page for a completed analysis, showing video playback, run metadata and downloadable CSV/JSON and visual outputs. Historical prototype screenshot; displayed event counts are estimates, not accuracy measurements.*
 
+## Video demonstration
+
+[Watch or download the 90-second silent demonstration](docs/demo/software-demo-90s.mp4) (1080p, approximately 2.7 MB).
+
+The edited screen recording shows selecting a video and starting analysis, the completed result page, trajectory playback, interactive charts and export controls. Waiting and long page pauses have been shortened; the video's duration is not an end-to-end processing-time benchmark. It documents the original prototype, rather than the synthetic-background CPU replay below. Displayed event counts remain heuristic estimates. See [video notes and chapter timings](docs/demo/README.md).
+
 ## Implemented features
 
 - Video upload, processing status and navigation between saved runs.
@@ -63,7 +69,7 @@ CSV columns must include `Frame`, `Visibility`, `X` and `Y`. Coordinates are ima
 
 ## Run the complete application
 
-See [setup instructions](docs/SETUP.md) for environments, model weights, FFmpeg and the Windows launcher. The complete application additionally requires Node.js, backend dependencies and a separate TrackNetV3 environment. Large model checkpoints, virtual environments, videos, databases and generated outputs are intentionally excluded from Git.
+See [setup instructions](docs/SETUP.md) for environments, model weights, FFmpeg and the Windows launcher. The complete application additionally requires Node.js, backend dependencies and a separate TrackNetV3 environment. Large model checkpoints, virtual environments, source videos, databases and generated outputs are intentionally excluded from Git. A small edited screen recording is provided under `docs/demo/`.
 
 Local addresses after startup:
 

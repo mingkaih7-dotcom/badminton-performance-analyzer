@@ -12,6 +12,7 @@
 # Outputs / data / videos
 **/outputs/
 **/*.mp4
+!docs/demo/software-demo-90s.mp4
 **/*.avi
 **/*.mov
 **/*.mkv
