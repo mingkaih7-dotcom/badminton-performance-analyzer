@@ -1,0 +1,17 @@
+{
+  "summary": {
+    "num_rallies": 1,
+    "total_hits": 32,
+    "avg_rally_seconds": 10.533333333333333
+  },
+  "rallies": [
+    {
+      "rally_index": 0,
+      "start_frame": 0,
+      "end_frame": 315,
+      "duration_frames": 316,
+      "duration_seconds": 10.533333333333333,
+      "hit_count": 32
+    }
+  ]
+}

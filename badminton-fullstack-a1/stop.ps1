@@ -1,20 +1,20 @@
-$ErrorActionPreference = "SilentlyContinue"
-
-function Kill-Port($port) {
-  $conns = Get-NetTCPConnection -LocalPort $port -State Listen -ErrorAction SilentlyContinue
-  if (-not $conns) {
-    Write-Host "Port $port not listening"
-    return
-  }
-  $pids = $conns | Select-Object -ExpandProperty OwningProcess -Unique
-  foreach ($pid in $pids) {
-    if ($pid) {
-      Stop-Process -Id $pid -Force -ErrorAction SilentlyContinue
-      Write-Host "Killed PID $pid on port $port"
-    }
-  }
+$ErrorActionPreference = "Stop"
+$projectRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
+$processFile = Join-Path $projectRoot "logs\processes.json"
+if (-not (Test-Path $processFile)) {
+  Write-Host "No recorded launcher processes."
+  exit 0
 }
 
-Kill-Port 8000
-Kill-Port 4200
-Kill-Port 8501
+$records = @(Get-Content -Raw -LiteralPath $processFile | ConvertFrom-Json)
+foreach ($record in $records) {
+  $serviceProcess = Get-Process -Id $record.ProcessId -ErrorAction SilentlyContinue
+  if (-not $serviceProcess) { continue }
+  $started = $serviceProcess.StartTime.ToUniversalTime().ToString("o")
+  if ($started -ne $record.Started -or $serviceProcess.ProcessName -ne "powershell") {
+    Write-Host "Skipping $($record.Name): process identity changed."
+    continue
+  }
+  & taskkill.exe /PID $record.ProcessId /T /F | Out-Null
+  Write-Host "Stopped launcher process tree: $($record.Name)"
+}

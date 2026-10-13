@@ -1,4 +1,5 @@
 import sqlite3
+from contextlib import contextmanager
 from pathlib import Path
 from datetime import datetime, timezone
 from typing import Optional, Dict, Any, List
@@ -12,8 +13,14 @@ class DB:
         self.db_path.parent.mkdir(parents=True, exist_ok=True)
         self._init()
 
+    @contextmanager
     def _conn(self):
-        return sqlite3.connect(str(self.db_path))
+        connection = sqlite3.connect(str(self.db_path))
+        try:
+            with connection:
+                yield connection
+        finally:
+            connection.close()
 
     def _init(self):
         with self._conn() as con:

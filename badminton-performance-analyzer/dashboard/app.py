@@ -536,13 +536,15 @@ def render(run_dir):
     avg_speed = float(np.mean(sp)) if len(sp) > 0 else 0.0
 
     c1, c2, c3, c4, c5, c6, c7 = st.columns(7)
-    c1.metric("Rallies", str(num_rallies))
-    c2.metric("Total hits", str(total_hits))
+    c1.metric("Estimated rallies", str(num_rallies))
+    c2.metric("Estimated hits", str(total_hits))
     c3.metric("Avg rally (sec)", f"{avg_rally:.2f}")
     c4.metric("Avg speed", f"{avg_speed:.2f}" if len(sp) else "-")
-    c5.metric("Coverage", f"{coverage*100:.1f}%")
+    c5.metric("Visibility coverage", f"{coverage*100:.1f}%")
     c6.metric("Outliers filtered", str(outlier_count))
     c7.metric("Avg gap (sec)", f"{avg_gap_sec:.2f}" if gap_count else "-")
+    st.caption("Interactive estimates are recalculated using the current settings and may differ "
+               "from saved pipeline metrics. Visibility coverage is not tracking accuracy.")
 
     st.caption(f"points_used={len(df_vis_sel)}  segs_drawn={len(segs)}  downsample={downsample}, max_speed_clean={max_speed_clean}, max_segs={max_segs}, thickness={thickness}, mode={mode}")
 

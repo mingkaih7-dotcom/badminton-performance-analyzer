@@ -1,0 +1,258 @@
+[
+  {
+    "type": "hit",
+    "frame": 30,
+    "rally_index": 0,
+    "x": 1008.0,
+    "y": 537.0,
+    "speed": 27.294688127912362
+  },
+  {
+    "type": "hit",
+    "frame": 36,
+    "rally_index": 0,
+    "x": 983.0,
+    "y": 414.0,
+    "speed": 17.72004514666935
+  },
+  {
+    "type": "hit",
+    "frame": 43,
+    "rally_index": 0,
+    "x": 991.0,
+    "y": 542.0,
+    "speed": 14.142135623730951
+  },
+  {
+    "type": "hit",
+    "frame": 54,
+    "rally_index": 0,
+    "x": 855.0,
+    "y": 543.0,
+    "speed": 19.209372712298546
+  },
+  {
+    "type": "hit",
+    "frame": 63,
+    "rally_index": 0,
+    "x": 777.0,
+    "y": 649.0,
+    "speed": 31.622776601683793
+  },
+  {
+    "type": "hit",
+    "frame": 69,
+    "rally_index": 0,
+    "x": 903.0,
+    "y": 378.0,
+    "speed": 44.41846462902562
+  },
+  {
+    "type": "hit",
+    "frame": 84,
+    "rally_index": 0,
+    "x": 1075.0,
+    "y": 198.0,
+    "speed": 12.649110640673518
+  },
+  {
+    "type": "hit",
+    "frame": 93,
+    "rally_index": 0,
+    "x": 1142.0,
+    "y": 258.0,
+    "speed": 17.0
+  },
+  {
+    "type": "hit",
+    "frame": 99,
+    "rally_index": 0,
+    "x": 1106.0,
+    "y": 329.0,
+    "speed": 34.92849839314596
+  },
+  {
+    "type": "hit",
+    "frame": 105,
+    "rally_index": 0,
+    "x": 975.0,
+    "y": 382.0,
+    "speed": 24.20743687382041
+  },
+  {
+    "type": "hit",
+    "frame": 111,
+    "rally_index": 0,
+    "x": 888.0,
+    "y": 460.0,
+    "speed": 25.0
+  },
+  {
+    "type": "hit",
+    "frame": 117,
+    "rally_index": 0,
+    "x": 821.0,
+    "y": 566.0,
+    "speed": 23.706539182259394
+  },
+  {
+    "type": "hit",
+    "frame": 123,
+    "rally_index": 0,
+    "x": 765.0,
+    "y": 710.0,
+    "speed": 5.0
+  },
+  {
+    "type": "hit",
+    "frame": 129,
+    "rally_index": 0,
+    "x": 810.0,
+    "y": 555.0,
+    "speed": 25.0
+  },
+  {
+    "type": "hit",
+    "frame": 149,
+    "rally_index": 0,
+    "x": 933.0,
+    "y": 555.0,
+    "speed": 7.211102550927978
+  },
+  {
+    "type": "hit",
+    "frame": 155,
+    "rally_index": 0,
+    "x": 903.0,
+    "y": 397.0,
+    "speed": 19.0
+  },
+  {
+    "type": "hit",
+    "frame": 161,
+    "rally_index": 0,
+    "x": 851.0,
+    "y": 182.0,
+    "speed": 14.560219778561036
+  },
+  {
+    "type": "hit",
+    "frame": 177,
+    "rally_index": 0,
+    "x": 772.0,
+    "y": 63.0,
+    "speed": 13.892443989449804
+  },
+  {
+    "type": "hit",
+    "frame": 183,
+    "rally_index": 0,
+    "x": 1687.0,
+    "y": 105.0,
+    "speed": 68.65857557508748
+  },
+  {
+    "type": "hit",
+    "frame": 189,
+    "rally_index": 0,
+    "x": 360.0,
+    "y": 262.0,
+    "speed": 511.71281008002916
+  },
+  {
+    "type": "hit",
+    "frame": 195,
+    "rally_index": 0,
+    "x": 1451.0,
+    "y": 333.0,
+    "speed": 304.4010512465422
+  },
+  {
+    "type": "hit",
+    "frame": 201,
+    "rally_index": 0,
+    "x": 809.0,
+    "y": 278.0,
+    "speed": 140.98226838861686
+  },
+  {
+    "type": "hit",
+    "frame": 207,
+    "rally_index": 0,
+    "x": 697.0,
+    "y": 528.0,
+    "speed": 12.0
+  },
+  {
+    "type": "hit",
+    "frame": 214,
+    "rally_index": 0,
+    "x": 701.0,
+    "y": 585.0,
+    "speed": 12.649110640673518
+  },
+  {
+    "type": "hit",
+    "frame": 234,
+    "rally_index": 0,
+    "x": 648.0,
+    "y": 561.0,
+    "speed": 20.223748416156685
+  },
+  {
+    "type": "hit",
+    "frame": 240,
+    "rally_index": 0,
+    "x": 637.0,
+    "y": 662.0,
+    "speed": 23.345235059857504
+  },
+  {
+    "type": "hit",
+    "frame": 248,
+    "rally_index": 0,
+    "x": 630.0,
+    "y": 570.0,
+    "speed": 13.0
+  },
+  {
+    "type": "hit",
+    "frame": 264,
+    "rally_index": 0,
+    "x": 648.0,
+    "y": 540.0,
+    "speed": 15.524174696260024
+  },
+  {
+    "type": "hit",
+    "frame": 271,
+    "rally_index": 0,
+    "x": 768.0,
+    "y": 530.0,
+    "speed": 48.373546489791295
+  },
+  {
+    "type": "hit",
+    "frame": 278,
+    "rally_index": 0,
+    "x": 967.0,
+    "y": 437.0,
+    "speed": 10.198039027185569
+  },
+  {
+    "type": "hit",
+    "frame": 286,
+    "rally_index": 0,
+    "x": 1106.0,
+    "y": 449.0,
+    "speed": 37.013511046643494
+  },
+  {
+    "type": "hit",
+    "frame": 293,
+    "rally_index": 0,
+    "x": 1200.0,
+    "y": 551.0,
+    "speed": 5.0
+  }
+]

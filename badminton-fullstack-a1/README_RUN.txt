@@ -1,49 +1,22 @@
 Badminton Performance Analyzer (Local)
 
-Folder layout (recommended):
-computing project/
-  badminton-fullstack-a1/
-  badminton-performance-analyzer/
-  TrackNetV3/
+Full setup and model instructions: ../docs/SETUP.md
+CPU demo and overview: ../README.md
 
-Prerequisites:
-- Node.js (LTS) installed, "npm" available
-- Python installed (you must have the .venv folders created already for each project)
+After installing backend, analyzer, TrackNetV3 and frontend dependencies
+and downloading the official checkpoints:
 
-First time setup (only once):
-1) backend:
-   cd badminton-fullstack-a1\backend
-   python -m venv .venv
-   .\.venv\Scripts\Activate.ps1
-   pip install -r requirements.txt
+Run: double-click start.bat
+Stop: double-click stop.bat
 
-2) frontend:
-   cd badminton-fullstack-a1\frontend
-   npm install
+The launcher creates output/log directories on first use, checks required
+checkpoints and starts background services. It opens:
+http://127.0.0.1:4200/upload
 
-3) analyzer:
-   cd badminton-performance-analyzer
-   python -m venv .venv
-   .\.venv\Scripts\Activate.ps1
-   pip install -r requirements.txt
+Logs: badminton-fullstack-a1/logs/
+Outputs: badminton-performance-analyzer/outputs/run_*/
+Database: badminton-fullstack-a1/data/meta.db (created automatically)
 
-4) tracknet:
-   cd TrackNetV3
-   python -m venv .venv
-   .\.venv\Scripts\Activate.ps1
-   pip install -r requirements.txt
-   (ensure model weights exist as required)
-
-Run:
-- Double click: badminton-fullstack-a1\start.bat
-- It opens the web app automatically:
-  http://127.0.0.1:4200/upload
-
-Stop:
-- Double click: badminton-fullstack-a1\stop.bat
-
-Troubleshooting:
-- If a port is already in use:
-  run stop.bat or close existing terminal windows (Backend/Frontend/Streamlit).
-- If Advanced always shows the same run:
-  ensure Streamlit is running app_multi.py and the URL includes ?run_id=run_xxx
+If startup fails, read the prerequisite message and logs. If a port is occupied,
+stop the earlier instance before restarting. Model inference has additional
+hardware and dependency requirements; the CPU demo does not require weights.
