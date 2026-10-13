@@ -4,9 +4,9 @@ A prototype that connects badminton shuttlecock tracking, trajectory analysis an
 
 The full workflow accepts a video, uses the third-party TrackNetV3 model to generate trajectory data, estimates rallies and hit events, and saves each analysis as a separate run. The interface uses Angular and FastAPI; an additional Streamlit dashboard supports visual exploration.
 
-![Trajectory visualisation generated from the submitted example run](examples/sample_run/trajectory.png)
+![Completed analysis result page shown in the final-year thesis](docs/images/results-page.jpg)
 
-*Image-space trajectory visualisation from the submitted project. Tracking discontinuities remain visible. This is not a calibrated landing map or an accuracy benchmark.*
+*Figure 5-1 from the final-year thesis: the Angular result page for a completed analysis, showing video playback, run metadata and downloadable CSV/JSON and visual outputs. Historical prototype screenshot; displayed event counts are estimates, not accuracy measurements.*
 
 ## Implemented features
 
